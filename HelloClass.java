@@ -9,8 +9,14 @@ public class HelloClass {
         cf2.testOutPut("こんにちは");
 
         ConsoleFormat.testOutPutStatic("こんにちは");
-
+        testOutPutStatic("こんにちはです");
 
     }
+
+    // クラスメソッド( インスタンスを作らなくてもいい )
+    public static void testOutPutStatic( String out ) {
+        System.out.println( String.format("testOutPutStatic : %s", out) );
+    }
+
 
 }

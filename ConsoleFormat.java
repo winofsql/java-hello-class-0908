@@ -10,4 +10,9 @@ public class ConsoleFormat {
         System.out.println( String.format("testOutPut : %s", out) );
     }
 
+    // クラスメソッド( インスタンスを作らなくてもいい )
+    public static void testOutPutStatic( String out ) {
+        System.out.println( String.format("testOutPut : %s", out) );
+    }
+
 }

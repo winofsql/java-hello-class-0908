@@ -1,3 +1,5 @@
+import java.util.Map;
+
 public class HelloClass {
 
     public static void main (String[] args) {
@@ -10,6 +12,8 @@ public class HelloClass {
 
         ConsoleFormat.testOutPutStatic("こんにちは");
         testOutPutStatic("こんにちはです");
+
+        Map<String, String> env = System.getenv();
 
     }
 

@@ -10,14 +10,14 @@ public class ConsoleFormat {
         this.out = out;
     }
 
-    // メソッド( 外部から利用可能 )
-    public void testOutPut( String out ) {
-        System.out.println( String.format("%s : %s", this.out, out) );
+    // インスタンスメソッド( 外部から利用可能 )
+    public void println( ) {
+        System.out.println( String.format("実行されたのは : %s", this.out) );
     }
 
-    // クラスメソッド( インスタンスを作らなくてもいい )
-    public static void testOutPutStatic( String out ) {
-        System.out.println( String.format("testOutPutStatic : %s", out) );
+    // クラスメソッド( インスタンスを作らなくてもいいメソッ )
+    public static void println_Static( String out ) {
+        System.out.println( String.format("println_Static : %s", out) );
     }
 
 }
